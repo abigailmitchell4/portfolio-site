@@ -158,7 +158,7 @@ main {
   height: 50rem;
   margin-top: 5rem;
 } */
-.line-left {
+#line-left {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
   animation: dash 3s linear forwards ;
@@ -167,7 +167,7 @@ main {
   bottom: 16.5rem;
   left: -24.5rem;
 }
-.line-about-me {
+#line-about-me {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
   animation: dash 3s linear forwards;
@@ -177,7 +177,7 @@ main {
   left: 15rem;
 }
 
-.line-work {
+#line-work {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
   animation: dash 2s linear forwards ;
@@ -186,7 +186,7 @@ main {
   bottom: 0.5rem;
   /* left: -12.4rem; */
 }
-.line-contact {
+#line-contact {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
   animation: dash 2s linear forwards ;
@@ -195,7 +195,7 @@ main {
   bottom: 4.5rem;
   /* left: -12.4rem; */
 }
-.line-vertical{
+#line-vertical{
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
   animation: dash 2s linear forwards ;
