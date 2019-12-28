@@ -1,0 +1,448 @@
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  text-decoration: none;
+}
+html {
+  /* background-color: #af8e00; */
+  background-color: #fff;
+  /* background-color: #d1d1c4; */
+  /* background-color: #fffcf1; */
+  box-sizing: border-box;
+  height:100%;
+  cursor: none;
+}
+:focus {
+  outline: 0;
+}
+
+body {
+  transition: background 1.5s ease-in-out, color 1s ease-in-out, stroke 1s ease-in-out;
+}
+
+.panel {
+  display: flex;
+}
+#main-panel, #about-panel {
+  height: 140vh;
+}
+
+.color-black {
+  /* background-color: #000;
+  color: #fff;
+  stroke: #fff; */
+  background-color: #e6c1f0;
+  color: #ee6d56;
+  stroke: #ee6d56;
+}
+
+.color-cream {
+  /* background-color: #fff;
+  color: #000;
+  stroke: #000; */
+  background-color: #fff;
+  color: #000;
+  stroke: #000;
+}
+
+.cursor{
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background-color: none;
+  position: fixed;
+  border-radius: 50%;
+  z-index: 999;
+  border: solid 1px;
+  border-color: rgb(238, 109, 86);
+}
+body {
+  overflow: auto;
+}
+
+/* NAV MENU */
+.navigation-menu {
+  /* width: 1rem;
+  text-align: left; */
+  position: fixed;
+  top: 45%;
+  left: -9rem;
+  z-index: 99;
+  height: auto;
+}
+li {
+  list-style: none;
+  font-size: 1.5rem;
+  font-family: 'Karla', sans-serif;
+  letter-spacing: 6px;
+}
+.navigation-menu ul {
+  transform: rotate(-90deg);
+}
+.navigation-menu ul li {
+  font-size: 1.1rem;
+  color: #f46c4e;
+  display: inline-block;
+}
+.navigation-menu ul li a {
+  margin-right: 3rem;
+}
+#menu-button a:visited {
+  color: #f46c4e;
+}
+#about-button,
+#work-button,
+#contact-button {
+  color:#8b7dff;
+  cursor: none;
+}
+/* #contact-button {
+  color: #f46c4e;
+}
+#about-button {
+  color: #af8e00;
+}
+#work-button {
+  color:#009782
+} */
+/* #home-logo {
+  float: left;
+  max-width: 25px;
+  padding: 1.6rem 1rem;
+  position: absolute;
+  z-index: 99;
+} */
+.strike-through {
+  display: block;
+  position: relative;
+}
+.strike-through:before,
+.strike-through:after {
+  background: #f46c4e;
+  content: '';
+  height: 2px;
+  margin-top: -0.5px;
+  position: absolute;
+  top: 50%;
+  width: 0%;
+}
+.strike-through:before {
+  left: -2.5px;
+}
+.strike-through:after {
+  background: #f46c4e;
+  right: 2.5px;
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.strike-through:hover:before {
+  background: #f46c4e;
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+  width: 100%;
+}
+.strike-through:hover:after {
+  background: transparent;
+  transition: 0s;
+  width: 100%;
+}
+
+/* MAIN */
+main {
+  height: fit-content;
+  position: relative;
+  top: 25px;
+}
+/* main .section-container {
+  position: relative;
+  height: 50rem;
+  margin-top: 5rem;
+} */
+.line-left {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 3s linear forwards ;
+  animation-timing-function: ease-in;
+  position: relative;
+  bottom: 16.5rem;
+  left: -24.5rem;
+}
+.line-about-me {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 3s linear forwards;
+  animation-timing-function: ease-in;
+  position: relative;
+  bottom: 6.1rem;
+  left: 15rem;
+}
+
+.line-work {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 2s linear forwards ;
+  animation-timing-function: ease-in;
+  position: relative;
+  bottom: 0.5rem;
+  /* left: -12.4rem; */
+}
+.line-contact {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 2s linear forwards ;
+  animation-timing-function: ease-in;
+  position: relative;
+  bottom: 4.5rem;
+  /* left: -12.4rem; */
+}
+.line-vertical{
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 2s linear forwards ;
+  animation-timing-function: ease-in;
+  position: relative;
+  bottom: 25.5rem;
+  left: 5.5rem;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+main .section-container .name {
+  padding-top: 2.8rem;
+  text-align: right;
+  z-index: 1;
+  /* font-family: 'Archivo', sans-serif; */
+  font-family: 'Snippet', sans-serif;
+  font-size: 4.9rem;
+  font-weight: 400;
+  letter-spacing: 11.7px;
+  color: #000;
+  width: fit-content;
+  left: 5%;
+  position: relative;
+}
+
+main .section-container .name #mitchell{
+  top: -2rem;
+  position: relative;
+}
+#l-letter {
+  height: 196px;
+  position: relative;
+  top: -23.7rem;
+  left: 27rem;
+}
+
+main .dev-container {
+  height: 0px;
+  color: #000;
+  font-family: 'Karla';
+  font-size: 1.2rem;
+  font-weight: 800;
+  letter-spacing: 3px;
+  padding: 1rem;
+  text-align: right;
+}
+main .about {
+  display: block;
+  font-family: 'Karla', sans-serif;
+  letter-spacing: 3px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  height: 43rem;
+}
+/* div#about-container {
+  background-color: #000;
+} */
+.section-header {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  /* font-size: 9rem; */
+  /* text-align: center; */
+}
+#header-about {
+  top: -100px;
+  position: relative;
+  float: right;
+  letter-spacing: 22px;
+  font-size: 1.5rem;
+  left: -16rem;
+}
+#hello-container {
+  height: 10px;
+}
+#main-hello {
+  position: relative;
+  font-size: 3rem;
+  writing-mode: vertical-rl;
+  text-orientation: sideways;
+  transform: rotate(180deg);
+  left: 25%;
+  bottom: 37rem;
+  font-family: 'Karla', sans-serif;
+  letter-spacing: 43px;
+  display: none
+}
+#main-hello:hover {
+  cursor: none;
+}
+main .intro #hello {
+  font-size: 3.8rem;
+  letter-spacing: 2px;
+  position: relative;
+  z-index: 2;
+  color: #000;
+  font-family: 'Archivo', serif;
+}
+#web-dev {
+  right: -12%;
+  position: relative;
+  bottom: 7.5rem;
+}
+#create-span {
+  color: #000;
+  float: right;
+  width: 23.0rem;
+  font-size: 2rem;
+  font-family: 'Archivo', sans-serif;
+  letter-spacing: 5px;
+  padding: 1rem;
+  right: -12%;
+  bottom: 6rem;
+  cursor: none;
+  position: relative;
+} 
+#create-something-link {
+  margin: 0;
+  color: #000;
+  width: 11rem;
+  float: right;
+  cursor: none;
+}
+#create-something-link a:visited {
+  color: #000;
+}
+#about-text {
+  width: 36rem;
+  position: relative;
+  right: 8%;
+}
+.intro-span {
+  z-index: 98;
+  height: fit-content;
+  line-height: 1.4;
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+  text-align: left;
+}
+#slc-span {
+  /* font-size: 2.5rem; */
+  top: -3rem;
+  position: relative;
+}
+#passionate-span {
+  width: 26rem;
+  font-size: 1.5rem;
+  position: relative;
+  font-style: italic;
+  font-weight: 700;
+  margin: 3rem 0 0 0;
+}
+#span-art, #span-design, #span-outdoors {
+  width: 5rem;
+  font-size: 5rem;
+}
+#extra-info-span {
+  height: 40rem;
+  text-align: justify;
+  font-size: 3rem;
+  font-family: 'Karla', sans-serif;
+}
+/* #headshot {
+  width: 320px;
+  position: relative;
+  display: inline-block;
+  padding: 1.5rem;
+  border-radius: 50%;
+  left: 15rem;
+  top: -29rem;
+} */
+#about-hello-span {
+  margin-right: 15rem;
+}
+#header-work {
+  top: -4.79rem;
+  position: relative;
+  letter-spacing: 20px;
+  width: fit-content;
+}
+
+#work-panel {
+  margin-top: 35rem;
+  height: 140vh;
+}
+.work {
+  display: block;
+  position: relative;
+  height: 40rem;
+}
+.skills-container {
+  width: fit-content;
+  float: right;
+  position: relative;
+  text-align: right;
+  margin: 0;
+}
+#skills-text {
+  font-family: 'Karla', sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  padding: 1rem 0;
+}
+
+/* CONTACT  */
+#contact-panel {
+  height: 50vh;
+  font-family: 'Karla', sans-serif;
+}
+#header-contact {
+  top: -4.79rem;
+  position: relative;
+  /* color: #fff; */
+  float: right;
+  letter-spacing: 22px;
+  font-size: 1.5rem;
+  left: 3rem;
+}
+.contact-container {
+  font-size: 1.2rem;
+  letter-spacing: 6px;
+  position: relative;
+  left: -20%;
+  width: fit-content;
+}
+/* .email-container {
+  
+} */
+.follow-container {
+  margin-top: 1.5rem;
+  display: inline-block;
+}
+#follow-link {
+  display: inline-block;
+  margin-right: 2rem;
+}
+h4 {
+  font-size: 1.2rem;
+  padding: 10px 0;
+  color: #808080;
+}
+
+/* div#contact-container {
+  background-color: #000;
+} */
