@@ -18,7 +18,9 @@ html {
 }
 
 body {
-  transition: background 1.5s ease-in-out, color 1s ease-in-out, stroke 1s ease-in-out;
+  transition: background 1.5s ease-in-out, 
+              color 1s ease-in-out, 
+              stroke 1s ease-in-out;
 }
 
 .panel {
@@ -89,8 +91,8 @@ li {
 .navigation-menu ul li a {
   margin-right: 3rem;
 }
-#menu-button a:visited {
-  color: #f46c4e;
+a:visited {
+  color: #000;
 }
 #about-button,
 #work-button,
@@ -175,7 +177,6 @@ main {
   position: relative;
   bottom: 6.1rem;
   left: 15rem;
-  display: block;
 }
 
 #line-work {
@@ -185,7 +186,6 @@ main {
   animation-timing-function: ease-in;
   position: relative;
   bottom: 0.5rem;
-  display: block;
   /* left: -12.4rem; */
 }
 #line-contact {
@@ -326,9 +326,7 @@ main .intro #hello {
   float: right;
   cursor: none;
 }
-#create-something-link a:visited {
-  color: #000;
-}
+
 #about-text {
   width: 36rem;
   position: relative;
@@ -425,7 +423,7 @@ main .intro #hello {
   font-size: 1.2rem;
   letter-spacing: 6px;
   position: relative;
-  left: -20%;
+  margin: 0;
   width: fit-content;
 }
 /* .email-container {

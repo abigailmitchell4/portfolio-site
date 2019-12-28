@@ -1,20 +1,4 @@
 $(document).ready(() => {
-  const $menuButton = $('#menu-button');
-  const $navDropdown = $('.nav-menu');
-
-  $navDropdown.hide();
-
-  $menuButton.on('click', () => {
-    $navDropdown.toggle();
-    $menuButton.hide();
-  });
-
-  $navDropdown.on('mouseleave', () => {
-    $navDropdown.hide();
-    $menuButton.toggle();
-  });
-
-// window.addEventListener('load', () => {
 
 //lines
 
@@ -27,13 +11,13 @@ $(document).ready(() => {
   // document.getElementById('line-work').style.display = 'none'
 
   $(document).on('scroll', function() {
-    if( $(this).scrollTop() >= $('.line-about-me').position().top ){
+    if( $(this).scrollTop() >= $('#line-about-me').position().top ){
         $('.line-about-me').show();
     } 
   });
 
   $(document).on('scroll', function() {
-    if( $(this).scrollTop() >= $('.line-work').position().top ){
+    if( $(this).scrollTop() >= $('#line-work').position().top ){
         $('.line-work').show();
     }
   });
