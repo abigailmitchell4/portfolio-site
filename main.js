@@ -1,30 +1,30 @@
-// $(document).ready(() => {
-//   const $menuButton = $('#menu-button');
-//   const $navDropdown = $('.nav-menu');
+$(document).ready(() => {
+  const $menuButton = $('#menu-button');
+  const $navDropdown = $('.nav-menu');
 
-//   $navDropdown.hide();
+  $navDropdown.hide();
 
-//   $menuButton.on('click', () => {
-//     $navDropdown.toggle();
-//     $menuButton.hide();
-//   });
+  $menuButton.on('click', () => {
+    $navDropdown.toggle();
+    $menuButton.hide();
+  });
 
-//   $navDropdown.on('mouseleave', () => {
-//     $navDropdown.hide();
-//     $menuButton.toggle();
-//   });
+  $navDropdown.on('mouseleave', () => {
+    $navDropdown.hide();
+    $menuButton.toggle();
+  });
 
-window.addEventListener('load', () => {
+// window.addEventListener('load', () => {
 
 //lines
 
 // let scroll = $window.scrollTop() + ($window.height()/2 );
 
-  // $('.line-about-me').hide()
-  // $('.line-work').hide()
+  $('.line-about-me').hide()
+  $('.line-work').hide()
 
-  document.getElementById('line-about-me').style.display = 'none'
-  document.getElementById('line-work').style.display = 'none'
+  // document.getElementById('line-about-me').style.display = 'none'
+  // document.getElementById('line-work').style.display = 'none'
 
   $(document).on('scroll', function() {
     if( $(this).scrollTop() >= $('.line-about-me').position().top ){
