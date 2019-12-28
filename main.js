@@ -23,8 +23,8 @@ window.addEventListener('load', () => {
   // $('.line-about-me').hide()
   // $('.line-work').hide()
 
-  document.getElementById('#line-about-me').style.display = 'none'
-  document.getElementById('#line-work').style.display = 'none'
+  document.getElementById('line-about-me').style.display = 'none'
+  document.getElementById('line-work').style.display = 'none'
 
   $(document).on('scroll', function() {
     if( $(this).scrollTop() >= $('.line-about-me').position().top ){
