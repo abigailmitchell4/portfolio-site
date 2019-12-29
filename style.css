@@ -175,8 +175,8 @@ main {
   animation: dash 3s linear forwards;
   animation-timing-function: ease-in;
   position: relative;
-  bottom: 6.1rem;
-  left: 15rem;
+  bottom: 0.5rem;
+  /* left: 15rem; */
 }
 
 #line-work {
@@ -194,8 +194,7 @@ main {
   animation: dash 2s linear forwards ;
   animation-timing-function: ease-in;
   position: relative;
-  bottom: 4.5rem;
-  /* left: -12.4rem; */
+  bottom: 0.5rem;
 }
 #line-vertical{
   stroke-dasharray: 1000;
@@ -256,6 +255,7 @@ main .about {
   position: relative;
   text-align: center;
   height: 43rem;
+  width: 45.5rem;
 }
 /* div#about-container {
   background-color: #000;
@@ -270,10 +270,10 @@ main .about {
 #header-about {
   top: -100px;
   position: relative;
-  float: right;
+  /* float: right; */
   letter-spacing: 22px;
   font-size: 1.5rem;
-  left: -16rem;
+  /* left: -16rem;*/
 }
 #hello-container {
   height: 10px;
@@ -330,7 +330,7 @@ main .intro #hello {
 #about-text {
   width: 36rem;
   position: relative;
-  right: 8%;
+  float: left;
 }
 .intro-span {
   z-index: 98;
@@ -340,15 +340,9 @@ main .intro #hello {
   letter-spacing: 5px;
   text-align: left;
 }
-#slc-span {
-  /* font-size: 2.5rem; */
-  top: -3rem;
-  position: relative;
-}
+
 #passionate-span {
   width: 26rem;
-  font-size: 1.5rem;
-  position: relative;
   font-style: italic;
   font-weight: 700;
   margin: 3rem 0 0 0;
@@ -362,6 +356,8 @@ main .intro #hello {
   text-align: justify;
   font-size: 3rem;
   font-family: 'Karla', sans-serif;
+  top: 11vh;
+  position: relative;
 }
 /* #headshot {
   width: 320px;
@@ -386,9 +382,12 @@ main .intro #hello {
   margin-top: 35rem;
   height: 140vh;
 }
+#work-container {
+  position: relative;
+  left: 15%;
+}
 .work {
   display: block;
-  position: relative;
   height: 40rem;
 }
 .skills-container {
@@ -407,24 +406,23 @@ main .intro #hello {
 
 /* CONTACT  */
 #contact-panel {
-  height: 50vh;
+  height: 70vh;
   font-family: 'Karla', sans-serif;
 }
 #header-contact {
-  top: -4.79rem;
+  margin-bottom: 6rem;
   position: relative;
-  /* color: #fff; */
-  float: right;
   letter-spacing: 22px;
   font-size: 1.5rem;
-  left: 3rem;
+  left: -10%;
 }
-.contact-container {
+#contact-container {
   font-size: 1.2rem;
   letter-spacing: 6px;
   position: relative;
   margin: 0;
   width: fit-content;
+  left: -20%;
 }
 /* .email-container {
   
@@ -436,6 +434,9 @@ main .intro #hello {
 #follow-link {
   display: inline-block;
   margin-right: 2rem;
+}
+#follow-link a {
+  cursor: none;
 }
 h4 {
   font-size: 1.2rem;
