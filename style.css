@@ -488,15 +488,15 @@ div:hover p {
   top: 11vh;
   position: relative;
 }
-/* #headshot {
-  width: 320px;
+#headshot {
+  width: 220px;
   position: relative;
   display: inline-block;
   padding: 1.5rem;
   border-radius: 50%;
-  left: 15rem;
-  top: -29rem;
-} */
+  left: -56%;
+  top: -23rem;
+}
 #about-hello-span {
   margin-right: 15rem;
 }
@@ -588,15 +588,15 @@ div:hover p {
   height: 100%;
 }
 #flashcard-overlay {
-  /* background-color: rgba(222, 222, 222, 0.31); */
-  background-color: rgba(255, 207, 197, 0.61);
+  background-color: rgba(222, 222, 222, 0.31);
+  /* background-color: rgba(255, 207, 197, 0.61); */
 }
 /* #flashcard-overlay:hover {
   background-color: rgba(246, 191, 255, 0.5);
 } */
 #budget-overlay {
-  /* background-color: rgba(224, 224, 224, 0.85); */
-  background-color: rgba(255, 207, 197, 0.81);
+  background-color: rgba(224, 224, 224, 0.85);
+  /* background-color: rgba(255, 207, 197, 0.81); */
 }
 /* #budget-overlay:hover {
   background-color: rgb(255, 117, 87, 0.4);
@@ -604,10 +604,10 @@ div:hover p {
 #budget {
   top: 5rem;
   /* color: #3d3dff; */
-  color: #767eff;
+  color: #000;
 }
 #budget a:visited {
-  color: #767eff;
+  color: #000;
 }
 #budget-header {
   position: absolute;
