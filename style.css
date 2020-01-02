@@ -511,7 +511,7 @@ div:hover p {
 
 #work-panel {
   margin-top: 35rem;
-  height: 140vh;
+  height: 170vh;
 }
 #work-container {
   position: relative;
@@ -558,17 +558,18 @@ div:hover p {
 }
 #flashcards {
   width: 35%;
+  color: #767eff;
 }
 #flashcards-header {
   position: absolute;
   top: 3rem;
   left: -3rem;
   letter-spacing: 6px;
-  font-family: 'Karla', sans-serif
+  font-family: 'Karla', sans-serif;
   /* color: #978a00; */
 }
 #flashcards a:visited {
-  color: #000;
+  color: #767eff;
 }
 .project-image {
   width: 300px;
@@ -587,13 +588,15 @@ div:hover p {
   height: 100%;
 }
 #flashcard-overlay {
-  background-color: rgba(222, 222, 222, 0.31);
+  /* background-color: rgba(222, 222, 222, 0.31); */
+  background-color: rgba(255, 207, 197, 0.61);
 }
 /* #flashcard-overlay:hover {
   background-color: rgba(246, 191, 255, 0.5);
 } */
 #budget-overlay {
-  background-color: rgba(224, 224, 224, 0.84);
+  /* background-color: rgba(224, 224, 224, 0.85); */
+  background-color: rgba(255, 207, 197, 0.81);
 }
 /* #budget-overlay:hover {
   background-color: rgb(255, 117, 87, 0.4);
@@ -601,16 +604,16 @@ div:hover p {
 #budget {
   top: 5rem;
   /* color: #3d3dff; */
-  color: #000
+  color: #767eff;
 }
 #budget a:visited {
-  color: #000;
+  color: #767eff;
 }
 #budget-header {
   position: absolute;
-  left: 15.5rem;
-  top: 1.9rem;
-  width: 10rem;
+  left: 5.5rem;
+  top: 4.9rem;
+  width: 35rem;
   font-size: 3.4rem;
   letter-spacing: 6px;
   font-family: 'Karla', sans-serif;
