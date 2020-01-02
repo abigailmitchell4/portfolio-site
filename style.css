@@ -6,7 +6,7 @@
 }
 html {
   /* background-color: #af8e00; */
-  background-color: #ffefea;
+  background-color: #fff;
   /* background-color: #d1d1c4; */
   /* background-color: #fffcf1; */
   box-sizing: border-box;
@@ -37,7 +37,7 @@ body {
 }
 
 .color-white {
-  background-color: #ffefea;
+  background-color: #fff;
   color: #000;
   stroke: #000;
 }
@@ -522,6 +522,8 @@ div:hover p {
   width: fit-content;
 }
 
+/* WORK section */
+
 #work-panel {
   margin-top: 35rem;
   height: 140vh;
@@ -540,28 +542,77 @@ div:hover p {
   position: relative;
   text-align: right;
   margin: 0;
+  top: -5rem;
+  color: #4f4fff
 }
 #skills-text {
   font-size: 2rem;
   font-weight: 900;
   padding: 1rem 0;
+  color: #f46c4e;
 }
-#selected-projects {
-  margin-bottom: 1rem;
+.project-container {
+  font-size: 3rem;
+  margin: 0 0 1rem 0;
+  position: relative;
+}
+#selected-container {
+  position: relative;
+}
+#selected-header {
+  font-size: 2rem;
+  margin: 4rem 2rem 6rem 0rem;
+  letter-spacing: 6px;
 }
 #flashcards {
-    font-size: 2.5rem;
-    color: #e6c1f0;
-    width: fit-content;
-    border-radius: 4%;
-    margin: 0;
+  width: 35%;
+}
+#flashcards-header {
+  position: absolute;
+  top: 3rem;
+  left: -3rem;
+  letter-spacing: 6px;
 }
 #flashcards a:visited {
-  color: #e6c1f0;;
+  color: #000;
+}
+.project-image {
+  width: 300px;
+  height: 200px;
 }
 #flashcards-image {
-  width: 300px;
+  background: url('./images/flashcards_image.jpg') no-repeat center;
+  background-size: cover;
 }
+#budget-app-image {
+  background: url('./images/budget-app_image.jpg') no-repeat center;
+  background-size: cover;
+}
+.image-overlay {
+  width: 100%;
+  height: 100%;
+}
+#flashcard-overlay {
+  background-color: rgba(228, 228, 228, 0.52);
+}
+#budget-overlay {
+  background-color: rgba(228, 228, 228, 0.69);
+}
+#budget {
+  top: 5rem;
+  color: #000;
+}
+#budget a:visited {
+  color: #000;
+}
+#budget-header {
+  position: absolute;
+  left: 5rem;
+  top: 4.5rem;
+  font-size: 3.4rem;
+  letter-spacing: 6px;
+}
+
 /* svg {
   width: 500px;
   height: 500px;
