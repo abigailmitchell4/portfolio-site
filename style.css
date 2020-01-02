@@ -6,7 +6,7 @@
 }
 html {
   /* background-color: #af8e00; */
-  background-color: #fff;
+  background-color: #ffefea;
   /* background-color: #d1d1c4; */
   /* background-color: #fffcf1; */
   box-sizing: border-box;
@@ -27,25 +27,25 @@ body {
   display: flex;
 }
 #main-panel, #about-panel {
-  height: 140vh;
+  height: 170vh;
 }
 
-.color-black {
-  /* background-color: #000;
-  color: #fff;
-  stroke: #fff; */
+.color-pink {
   background-color: #e6c1f0;
   color: #ee6d56;
   stroke: #ee6d56;
 }
 
-.color-cream {
-  /* background-color: #fff;
-  color: #000;
-  stroke: #000; */
-  background-color: #fff;
+.color-white {
+  background-color: #ffefea;
   color: #000;
   stroke: #000;
+}
+
+.color-black {
+  background-color: #000;
+  color: #fff;
+  stroke: #fff;
 }
 
 .cursor{
@@ -173,6 +173,7 @@ main {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
   animation: dash 3s linear forwards;
+  animation-delay: 2s;
   animation-timing-function: ease-in;
   position: relative;
   bottom: 0.5rem;
@@ -183,6 +184,7 @@ main {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
   animation: dash 2s linear forwards ;
+  animation-delay: 2s;
   animation-timing-function: ease-in;
   position: relative;
   bottom: 0.5rem;
@@ -192,6 +194,7 @@ main {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
   animation: dash 2s linear forwards ;
+  animation-delay: 2s;
   animation-timing-function: ease-in;
   position: relative;
   bottom: 0.5rem;
@@ -203,7 +206,7 @@ main {
   animation-timing-function: ease-in;
   position: relative;
   bottom: 25.5rem;
-  left: 5.5rem;
+  left: 8rem;
 }
 
 @keyframes dash {
@@ -236,16 +239,31 @@ main .section-container .name #mitchell{
   top: -23.7rem;
   left: 27rem;
 }
+#multi-shapes {
+  width: 27rem;
+  position: relative;
+  top: -37.8rem;
+  right: 7.23rem;
+  z-index: 2;
+}
+#green-shape {
+  position: relative;
+  width: 3rem;
+  top: -48rem;
+  left: 7rem;
+  z-index: 2;
+}
 
 main .dev-container {
   height: 0px;
   color: #000;
   font-family: 'Karla';
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 800;
   letter-spacing: 3px;
   padding: 1rem;
   text-align: right;
+  width: fit-content;
 }
 main .about {
   display: block;
@@ -275,6 +293,18 @@ main .about {
   font-size: 1.5rem;
   /* left: -16rem;*/
 }
+
+#hello-section {
+  font-family: 'Archivo', sans-serif;
+  height: 0;
+  width: 0;
+  font-size: 2rem;
+  opacity: 0;
+  color: #00b0b6;
+  animation: port 3s 1 forwards;
+  -webkit-animation: port 3s 1 forwards;
+}
+
 #hello-container {
   height: 10px;
 }
@@ -301,10 +331,124 @@ main .intro #hello {
   color: #000;
   font-family: 'Archivo', serif;
 }
-#web-dev {
-  right: -12%;
+
+/* LETTERS - hello */
+
+div p:nth-of-type(2){
+  animation-delay: 0.1s;
+  -webkit-animation-delay: 0.1s;
+}
+
+div p:nth-of-type(3){
+  animation-delay: 0.2s;
+  -webkit-animation-delay: 0.2s;
+}
+
+div p:nth-of-type(4){
+  animation-delay: 0.3s;
+  -webkit-animation-delay: 0.3s;
+}
+
+div p:nth-of-type(5){
+  animation-delay: 0.4s;
+  -webkit-animation-delay: 0.4s;
+}
+
+div p:nth-of-type(6){
+  animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+}
+
+div p:nth-of-type(7){
+  animation-delay: 0.6s;
+  -webkit-animation-delay: 0.6s;
+}
+
+div p:nth-of-type(8){
+  animation-delay: 0.7s;
+  -webkit-animation-delay: 0.7s;
+}
+
+div p:nth-of-type(9){
+  animation-delay: 0.8s;
+  -webkit-animation-delay: 0.8s;
+}
+
+div:hover p {
+  animation: reset 1s 1;
+  -webkit-animation: reset 1s 1 ;
+}
+
+@keyframes port {
+  0%{
+    transform: rotateY(90deg) translateY(25%);
+    opacity: 0.0;
+  }
+  100%{
+    transform: rotateY(0deg) translateY(0%);
+    opacity: 1.0;
+  }
+}
+
+@-webkit-keyframes port {
+  0%{
+   -webkit-transform: rotateY(90deg) translateY(25%);
+    opacity: 0.0;
+  }
+  100%{
+    -webkit-transform: rotateY(0deg) translateY(0%);
+    opacity: 1.0;
+  }
+}
+
+@keyframes reset {
+  0%{}
+  100%{}
+}
+
+@-webkit-keyframes reset {
+  0%{}
+  100%{}
+}
+
+#h {
   position: relative;
-  bottom: 7.5rem;
+  left: -23rem;
+    top: -16rem;
+  /* color: #f46c4e; */
+}
+#e {
+  position: relative;
+  left: -19rem;
+  top: -22rem;
+  /* color: #009782; */
+}
+#l1 {
+  position: relative;
+  left: 0rem;
+    top: -15rem;
+  /* color: #3d3dff; */
+}
+#l2 {
+  position: relative;
+  top: -9rem;
+  left: -10rem;
+  /* color: #af8e00; */
+}
+#o {
+  position: relative;
+  top: -15rem;
+  left: 23rem;
+  /* color: #f763ff; */
+}
+#web-dev {
+  right: -27%;
+  position: relative;
+  bottom: 7.7rem;
+  color: #3d3dff;
+  background-color: #ffd5fa;
+  text-align: center;
+  padding: 5px;
 }
 #create-span {
   color: #000;
@@ -384,7 +528,7 @@ main .intro #hello {
 }
 #work-container {
   position: relative;
-  left: 15%;
+  font-family: 'Karla', sans-serif;
 }
 .work {
   display: block;
@@ -398,11 +542,39 @@ main .intro #hello {
   margin: 0;
 }
 #skills-text {
-  font-family: 'Karla', sans-serif;
   font-size: 2rem;
   font-weight: 900;
   padding: 1rem 0;
 }
+#selected-projects {
+  margin-bottom: 1rem;
+}
+#flashcards {
+    font-size: 2.5rem;
+    color: #e6c1f0;
+    width: fit-content;
+    border-radius: 4%;
+    margin: 0;
+}
+#flashcards a:visited {
+  color: #e6c1f0;;
+}
+#flashcards-image {
+  width: 300px;
+}
+/* svg {
+  width: 500px;
+  height: 500px;
+}
+
+rect.hbar {
+  mask: url(#mask-stripe)
+}
+
+.fillColor {
+  fill: blue;
+} */
+
 
 /* CONTACT  */
 #contact-panel {
@@ -422,7 +594,7 @@ main .intro #hello {
   position: relative;
   margin: 0;
   width: fit-content;
-  left: -20%;
+  left: 30%;
 }
 /* .email-container {
   
@@ -430,6 +602,7 @@ main .intro #hello {
 .follow-container {
   margin-top: 1.5rem;
   display: inline-block;
+  cursor: none;
 }
 #follow-link {
   display: inline-block;
@@ -446,4 +619,45 @@ h4 {
 
 /* div#contact-container {
   background-color: #000;
+} */
+/* .x {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  margin-left: -5px;
+  margin-top: -5px;
+  background: red;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 1;
+}
+.x:nth-child(even) {
+  background: blue;
+} */
+
+/* #curved-text {
+  width: 57rem; 
+  height: 100vh;
+  position: relative;
+  left: -5%;
+  top: -19rem;
+}
+textPath {
+  font-size: 2rem;
+  font-family: 'Karla', sans-serif;
+  letter-spacing: 2px;
+}
+
+#my-svg {
+	width:100%;
+  height:auto;
+  stroke-opacity: 0;
+  stroke-width: 10rem;
+  position: relative;
+  left: -5%;
+  top: -19rem;
+}
+
+path {
+  fill: transparent;
 } */
