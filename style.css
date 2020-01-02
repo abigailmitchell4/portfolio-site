@@ -558,7 +558,7 @@ div:hover p {
 }
 #flashcards {
   width: 35%;
-  color: #767eff;
+  color: #000;
 }
 #flashcards-header {
   position: absolute;
@@ -569,7 +569,7 @@ div:hover p {
   /* color: #978a00; */
 }
 #flashcards a:visited {
-  color: #767eff;
+  color: #000;
 }
 .project-image {
   width: 300px;
