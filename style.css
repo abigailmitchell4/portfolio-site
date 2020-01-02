@@ -549,7 +549,6 @@ div:hover p {
   font-size: 2rem;
   font-weight: 900;
   padding: 1rem 0;
-  color: #f46c4e;
 }
 .project-container {
   font-size: 3rem;
@@ -585,7 +584,7 @@ div:hover p {
   background-size: cover;
 }
 #budget-app-image {
-  background: url('./images/budget-app_image.jpg') no-repeat center;
+  background: url('./images/budget-image.jpg') no-repeat center;
   background-size: cover;
 }
 .image-overlay {
@@ -596,7 +595,7 @@ div:hover p {
   background-color: rgba(228, 228, 228, 0.52);
 }
 #budget-overlay {
-  background-color: rgba(228, 228, 228, 0.69);
+  background-color: rgba(228, 228, 228, 0.81);
 }
 #budget {
   top: 5rem;
