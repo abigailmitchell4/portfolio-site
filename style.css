@@ -5,7 +5,8 @@
   text-decoration: none;
 }
 html {
-  background-color: #ffe7de;
+  background-color: #ffe2e8;
+  color: #0000c8;
   box-sizing: border-box;
   height:100%;
   cursor: none;
@@ -34,9 +35,15 @@ body {
 }
 
 .color-white {
-  background-color: #ffe7de;
+  /* background-color: #ffe7de;
   color: #000;
-  stroke: #000;
+  stroke: #000; */
+}
+
+.color-peach {
+  background-color:#ffe2e8;
+  color: #0000c8;
+  stroke: #0000c8;
 }
 
 .color-black {
@@ -87,12 +94,13 @@ li {
   margin-right: 3rem;
 }
 a:visited {
-  color: #000;
+  color: #0000c8;
 }
 #about-button,
 #work-button,
 #contact-button {
-  color:#8b7dff;
+  /* color:#8b7dff; */
+  color: #0000c8;
   cursor: none;
 }
 
@@ -141,6 +149,7 @@ main {
   margin-top: 5rem;
 } */
 #line-left {
+  stroke-width: 3;
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
   animation: dash 3s linear forwards ;
@@ -190,6 +199,7 @@ main {
   position: relative;
   bottom: 25.5rem;
   left: 8rem;
+  stroke-width: 3;
 }
 
 @keyframes dash {
@@ -206,7 +216,7 @@ main .section-container .name {
   font-size: 4.9rem;
   font-weight: 400;
   letter-spacing: 11.7px;
-  color: #000;
+  /* color: #000; */
   width: fit-content;
   left: 5%;
   position: relative;
@@ -239,7 +249,7 @@ main .section-container .name #mitchell{
 
 main .dev-container {
   height: 0px;
-  color: #000;
+  /* color: #000; */
   font-family: 'Karla';
   font-size: 1rem;
   font-weight: 800;
@@ -281,7 +291,10 @@ main .about {
   font-family: 'Archivo', sans-serif;
   height: 0;
   width: 0;
-  font-size: 2rem;
+  font-size: 1rem;
+  position: relative;
+  top: -21.5rem;
+  left: -13.5rem;
   opacity: 0;
   animation: port 3s 1 forwards;
   -webkit-animation: port 3s 1 forwards;
@@ -310,13 +323,13 @@ main .intro #hello {
   letter-spacing: 2px;
   position: relative;
   z-index: 2;
-  color: #000;
+  /* color: #000; */
   font-family: 'Archivo', serif;
 }
 
 /* LETTERS - hello */
 
-div p:nth-of-type(2){
+/* div p:nth-of-type(2){
   animation-delay: 0.1s;
   -webkit-animation-delay: 0.1s;
 }
@@ -359,7 +372,7 @@ div p:nth-of-type(9){
 div:hover p {
   animation: reset 1s 1;
   -webkit-animation: reset 1s 1 ;
-}
+} */
 
 @keyframes port {
   0%{
@@ -423,6 +436,7 @@ div:hover p {
   left: 23rem;
   /* color: #f763ff; */
 }
+
 #web-dev {
   right: -27%;
   position: relative;
@@ -431,11 +445,11 @@ div:hover p {
   padding: 5px;
 }
 #create-span {
-  color: #000;
+  /* color: #000; */
   float: right;
   width: 23.0rem;
   font-size: 2rem;
-  font-family: 'Archivo', sans-serif;
+  font-family: 'Snippet', sans-serif;
   letter-spacing: 5px;
   padding: 1rem;
   right: -12%;
@@ -445,7 +459,7 @@ div:hover p {
 } 
 #create-something-link {
   margin: 0;
-  color: #000;
+  /* color: #000; */
   width: 11rem;
   float: right;
   cursor: none;
@@ -491,6 +505,7 @@ div:hover p {
   border-radius: 50%;
   left: -56%;
   top: -23rem;
+  display: none;
 }
 #about-hello-span {
   margin-right: 15rem;
@@ -543,17 +558,21 @@ div:hover p {
 }
 #selected-header {
   font-size: 2rem;
-  margin: 4rem 2rem 6rem 0rem;
+  margin: 4rem 2rem;
   letter-spacing: 6px;
 }
 #selected-p {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin: 0 0 4rem 0;
   width: 17rem;
+  line-height: 1.3;
+  font-weight: 100;
+  line-height: 1.4;
+  letter-spacing: 13px;
 }
 #flashcards {
   width: 35%;
-  color: #000;
+  /* color: #000; */
 }
 #flashcards-header {
   position: absolute;
@@ -564,7 +583,7 @@ div:hover p {
   /* color: #978a00; */
 }
 #flashcards a:visited {
-  color: #000;
+  color: #0000c8;
 }
 .project-image {
   width: 0;
@@ -599,10 +618,10 @@ div:hover p {
 #budget {
   top: 5rem;
   /* color: #3d3dff; */
-  color: #000;
+  color: #0000c8;
 }
 #budget a:visited {
-  color: #000;
+  color: #0000c8;
 }
 #budget-header {
   position: absolute;
