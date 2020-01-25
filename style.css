@@ -350,7 +350,6 @@ main .intro #hello {
   padding: 5px;
 }
 #create-span {
-  /* color: #000; */
   float: right;
   width: 23.0rem;
   font-size: 2rem;
@@ -365,10 +364,10 @@ main .intro #hello {
 } 
 #create-something-link {
   margin: 0;
-  /* color: #000; */
   width: 11rem;
   float: right;
   cursor: none;
+  color: #0000c8;
 }
 
 #about-text {
