@@ -5,8 +5,8 @@
   text-decoration: none;
 }
 html {
-  background-color: #ffe2e8;
-  color: #0000c8;
+  background-color: #dbdbdb;
+  color: #ee6d56;
   box-sizing: border-box;
   height:100%;
   cursor: none;
@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  transition: background 1.5s ease-in-out, 
+  transition: background 1s ease-in-out, 
               color 1s ease-in-out, 
               stroke 1s ease-in-out;
 }
@@ -28,23 +28,38 @@ body {
   height: 170vh;
 }
 
-.color-pink {
+.color-pink, .color-pink a:visited  {
   background-color: #e6c1f0;
   color: #ee6d56;
   stroke: #ee6d56;
 }
 
-.color-peach {
-  background-color:#ffe2e8;
-  color: #0000c8;
-  stroke: #0000c8;
+.color-gray, .color-gray a:visited  {
+  background-color:#dbdbdb;
+  color: #ee6d56;
+  stroke: #ee6d56;
 }
 
-.color-black {
+.color-black, .color-black a:visited  {
   background-color: #000;
   color: #fff;
   stroke: #fff;
 }
+
+.color-blue, .color-blue a:visited  {
+  background-color: #4b4bd3;
+  color: #ee6d56;
+  stroke: #ee6d56;
+}
+
+.color-green, .color-green a:visited {
+  background-color: #706637;
+  color: #ebbcb7;
+  stroke: #ebbcb7;
+}
+/* .color-green a:visited {
+  color: #ebbcb7;
+} */
 
 .cursor{
   left: 0;
@@ -65,7 +80,7 @@ body {
 /* NAV MENU */
 .navigation-menu {
   position: fixed;
-  top: 45%;
+  top: 300px;
   left: -9rem;
   z-index: 99;
   height: auto;
@@ -78,6 +93,9 @@ li {
 }
 .navigation-menu ul {
   transform: rotate(-90deg);
+  padding: 10px;
+  border-style: solid;
+  border-width: 2px;
 }
 .navigation-menu ul li {
   font-size: 1.1rem;
@@ -85,16 +103,14 @@ li {
   display: inline-block;
 }
 .navigation-menu ul li a {
-  margin-right: 3rem;
+  margin: 0 1.5rem;
 }
 a:visited {
-  color: #0000c8;
+  /* color: #f46c4e; */
 }
 #about-button,
 #work-button,
 #contact-button {
-  /* color:#8b7dff; */
-  color: #0000c8;
   cursor: none;
 }
 
@@ -139,7 +155,7 @@ main {
 }
 
 #line-left {
-  stroke-width: 3;
+  stroke-width: 4;
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
   animation: dash 3s linear forwards ;
@@ -155,8 +171,9 @@ main {
   animation-delay: 2s;
   animation-timing-function: ease-in;
   position: relative;
-  bottom: 0.5rem;
-  stroke-width: 3;
+  bottom: 2rem;
+  stroke-width: 4;
+  left: 400px;
 }
 
 #line-work {
@@ -167,7 +184,7 @@ main {
   animation-timing-function: ease-in;
   position: relative;
   bottom: 0.5rem;
-  stroke-width: 3;
+  stroke-width: 4;
 }
 #line-contact {
   stroke-dasharray: 1000;
@@ -177,7 +194,7 @@ main {
   animation-timing-function: ease-in;
   position: relative;
   bottom: 0.5rem;
-  stroke-width: 3;
+  stroke-width: 4;
 }
 #line-vertical{
   stroke-dasharray: 1000;
@@ -185,9 +202,9 @@ main {
   animation: dash 2s linear forwards ;
   animation-timing-function: ease-in;
   position: relative;
-  bottom: 25.5rem;
+  bottom: 25.7rem;
   left: 8rem;
-  stroke-width: 3;
+  stroke-width: 4;
 }
 
 @keyframes dash {
@@ -201,7 +218,7 @@ main .section-container .name {
   z-index: 1;
   /* font-family: 'Archivo', sans-serif; */
   font-family: 'Snippet', sans-serif;
-  font-size: 4.9rem;
+  font-size: 5rem;
   font-weight: 400;
   letter-spacing: 11.7px;
   width: fit-content;
@@ -260,6 +277,7 @@ main .about {
   font-family: 'Archivo', sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
+  
 }
 #header-about {
   top: -100px;
@@ -267,7 +285,7 @@ main .about {
   /* float: right; */
   letter-spacing: 22px;
   font-size: 1.5rem;
-  /* left: -16rem;*/
+  left: -14rem;
 }
 
 #hello-section {
@@ -354,7 +372,6 @@ main .intro #hello {
   width: 23.0rem;
   font-size: 2rem;
   font-family: 'Karla', sans-serif;
-  font-weight: 900;
   letter-spacing: 5px;
   padding: 1rem;
   right: -12%;
@@ -367,7 +384,7 @@ main .intro #hello {
   width: 11rem;
   float: right;
   cursor: none;
-  color: #0000c8;
+  color: #f46c4e;
 }
 
 #about-text {
@@ -444,8 +461,9 @@ main .intro #hello {
   margin: 0;
   top: 7rem;
   left: 3rem;
-  color: #f46c4e;
-  background-color: #cfd2ff;
+  color: #ee6d56;
+  border-style: solid;
+  border-width: 2px;
   padding: 0 20px 20px;
 }
 #skills-text {
@@ -462,8 +480,8 @@ main .intro #hello {
   position: relative;
 }
 #selected-header {
-  font-size: 2rem;
-  margin: 4rem 2rem;
+  font-size: 2.5rem;
+  margin: 4rem 0;
   letter-spacing: 6px;
 }
 #selected-p {
@@ -473,7 +491,7 @@ main .intro #hello {
   line-height: 1.3;
   font-weight: 100;
   line-height: 1.4;
-  letter-spacing: 13px;
+  letter-spacing: 4px;
 }
 #flashcards {
   width: 35%;
@@ -486,7 +504,7 @@ main .intro #hello {
   font-family: 'Karla', sans-serif;
 }
 #flashcards a:visited {
-  color: #0000c8;
+  color: #ee6d56;
 }
 .project-image {
   width: 0;
@@ -518,10 +536,10 @@ main .intro #hello {
 
 #seeker {
   top: 5rem;
-  color: #0000c8;
+  color: #ee6d56;
 }
 #seeker a:visited {
-  color: #0000c8;
+  color: #ee6d56;
 }
 #seeker-header {
   position: absolute;
@@ -556,6 +574,10 @@ main .intro #hello {
   left: 30%;
 }
 
+.email-container p{
+  font-size: 1.5rem;
+}
+
 .follow-container {
   margin-top: 1.5rem;
   display: inline-block;
@@ -571,5 +593,5 @@ main .intro #hello {
 h4 {
   font-size: 1.2rem;
   padding: 10px 0;
-  color: #4b4bd3;
+  /* color: #4b4bd3; */
 }
