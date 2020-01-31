@@ -106,7 +106,7 @@ li {
   margin: 0 1.5rem;
 }
 a:visited {
-  /* color: #f46c4e; */
+  color: inherit;
 }
 #about-button,
 #work-button,
@@ -461,7 +461,6 @@ main .intro #hello {
   margin: 0;
   top: 7rem;
   left: 3rem;
-  color: #ee6d56;
   border-style: solid;
   border-width: 2px;
   padding: 0 20px 20px;
@@ -504,7 +503,7 @@ main .intro #hello {
   font-family: 'Karla', sans-serif;
 }
 #flashcards a:visited {
-  color: #ee6d56;
+  color: inherit;
 }
 .project-image {
   width: 0;
@@ -536,10 +535,9 @@ main .intro #hello {
 
 #seeker {
   top: 5rem;
-  color: #ee6d56;
 }
 #seeker a:visited {
-  color: #ee6d56;
+  color: inherit;
 }
 #seeker-header {
   position: absolute;
