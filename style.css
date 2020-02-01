@@ -294,11 +294,25 @@ main .about {
   width: 0;
   font-size: 1rem;
   position: relative;
-  top: -21.5rem;
-  left: -13.5rem;
+  top: -35.3rem;
+  left: -17.7rem;
   opacity: 0;
   animation: port 3s 1 forwards;
   -webkit-animation: port 3s 1 forwards;
+}
+#hello-text {
+  position: relative;
+  font-size: 4rem;
+  top: 18.1rem;
+  left: 5rem;
+  font-weight: 400;
+  color: #dbdbdb;
+}
+
+#hello-svg {
+  fill: #ee6d56;
+  width: 305px;
+  height: 305px;
 }
 
 #hello-container {
