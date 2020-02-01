@@ -28,47 +28,31 @@ body {
   height: 170vh;
 }
 
-.color-pink, 
-.color-pink #contact-button a:visited,
-.color-pink #about-button a:visited,
-.color-pink #work-button a:visited
-{
+.color-pink {
   background-color: #e6c1f0;
   color: #ee6d56;
   stroke: #ee6d56;
 }
 
-.color-gray, 
-.color-gray #contact-button a:visited,
-.color-gray #about-button a:visited,
-.color-gray #work-button a:visited
-{
+.color-gray {
   background-color:#dbdbdb;
   color: #ee6d56;
   stroke: #ee6d56;
 }
 
-.color-black, 
-.color-black a:visited  
-{
+.color-black {
   background-color: #000;
   color: #fff;
   stroke: #fff;
 }
 
-.color-blue, 
-.color-blue a:visited  
-{
+.color-blue {
   background-color: #4b4bd3;
   color: #ee6d56;
   stroke: #ee6d56;
 }
 
-.color-green, 
-.color-green #contact-button a:visited,
-.color-green #about-button a:visited,
-.color-green #work-button a:visited 
-{
+.color-green {
   background-color: #706637;
   color: #ebbcb7;
   stroke: #ebbcb7;
@@ -77,7 +61,7 @@ body {
   color: #ebbcb7;
 } */
 
-.cursor{
+.cursor {
   left: 0;
   top: 0;
   width: 20px;
