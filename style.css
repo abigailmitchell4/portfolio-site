@@ -321,23 +321,36 @@ main .about {
   opacity: 1;
 }
 #hello-text {
-  position: relative;
+  /* position: relative;
   font-size: 4rem;
   top: 18.1rem;
   left: 5rem;
   letter-spacing: 4px;
   font-weight: 400;
   color: #dbdbdb;
-  opacity: 1;
+  opacity: 1; */
   /* animation: text 3s 1 forwards;
   -webkit-animation: text 3s 1 forwards; */
+  position: relative;
+  font-size: 4rem;
+  top: 17.1rem;
+  left: 4rem;
+  letter-spacing: 4px;
+  font-weight: 400;
+  color: #ee6d56;
+  opacity: 1;
+  border-width: 2px;
+  width: fit-content;
+  border-color: #ee6d56;
+  padding: 15px 50px 15px 15px;
+  border-style: solid;
 }
-
+/* 
 #hello-svg {
   fill: #ee6d56;
   width: 305px;
   height: 305px;
-}
+} */
 
 #hello-container {
   height: 10px;
