@@ -127,11 +127,13 @@ li {
 a:visited {
   color: inherit;
 }
+
 #am-button
 #about-button,
 #work-button,
 #contact-button {
   cursor: none;
+  color: inherit;
 }
 
 .strike-through {
