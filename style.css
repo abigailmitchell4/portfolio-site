@@ -128,7 +128,7 @@ a:visited {
   color: inherit;
 }
 
-#am-button
+#am-button,
 #about-button,
 #work-button,
 #contact-button {
@@ -533,10 +533,9 @@ main .about {
   align-items: center;
   align-content: center;
 }
-#flashcards {
-  /* width: 35%; */
+/* #flashcards a {
   cursor: none;
-}
+} */
 #flashcards-header {
   width: 51rem;
   display: flex;
@@ -548,7 +547,7 @@ main .about {
 #flashcards a:visited {
   color: inherit;
 }
-#seeker {
+#seeker a, #flashcards a {
   cursor: none;
 }
 #seeker a:visited {
@@ -562,6 +561,9 @@ main .about {
   text-align: justify;
   letter-spacing: 6px;
   font-family: 'Karla', sans-serif;
+}
+#seeker:hover, #flashcards:hover {
+  color: #fff;
 }
 .number {
   font-size: 1.1rem;
