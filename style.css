@@ -621,3 +621,38 @@ h4 {
   font-size: 1.2rem;
   padding: 10px 0;
 }
+
+/* TABLET RESPONSIVE */
+
+@media only screen and (max-width: 890px) {
+  main .about {
+    width: 24.5rem;
+  }
+
+  #header-about {
+    left: -3.4rem;
+  }
+
+  #line-about-me {
+    left: 290px;
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .navigation-menu {
+    top: 30px;
+    left: 40px;
+  }
+  .navigation-menu ul {
+    transform: none;
+  }
+  .am-nav {
+    top: 30px;
+    right: 40px;
+  }
+  main .section-container .name {
+    left: 30%;
+    top: 4rem;
+  }
+}
