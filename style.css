@@ -577,6 +577,7 @@ main .about {
   margin-right: 2rem;
 }
 #follow-link a {
+  color: inherit;
   cursor: none;
 }
 h4 {
