@@ -1,14 +1,12 @@
 
 * {
   margin: 0 auto;
-  padding: 0;
   text-decoration: none;
 }
 html {
   background-color: #dbdbdb;
   color: #ee6d56;
   box-sizing: border-box;
-  height:100%;
   cursor: none;
 }
 :focus {
@@ -127,6 +125,9 @@ li {
 a:visited {
   color: inherit;
 }
+#follow ul {
+  padding: 0;
+}
 
 #am-button,
 #about-button,
@@ -172,7 +173,6 @@ a:visited {
 /* MAIN */
 main {
   height: fit-content;
-  position: relative;
   top: 25px;
 }
 
@@ -450,7 +450,7 @@ main .about {
   font-size: 5rem;
 }
 #extra-info-span {
-  height: 40rem;
+  min-height: 40rem;
   text-align: justify;
   font-size: 3rem;
   font-family: 'Karla', sans-serif;
@@ -625,8 +625,12 @@ h4 {
 /* TABLET RESPONSIVE */
 
 @media only screen and (max-width: 890px) {
+  * {
+    margin: 0 auto;
+  }
+  
   main .about {
-    width: 24.5rem;
+    min-width: 24.5rem;
   }
 
   #header-about {
@@ -640,19 +644,141 @@ h4 {
 }
 
 @media only screen and (max-width: 600px) {
+  * {
+    max-width: 375px;
+  }
+  main .about {
+    min-width: 230px;
+    width: 285px;
+  }
   .navigation-menu {
     top: 30px;
     left: 40px;
+    width: 200px;
   }
   .navigation-menu ul {
     transform: none;
+  }
+  #am-button, #about-button, #work-button, #contact-button {
+    margin: 0 1rem;
+  }
+  li {
+    font-size: 1rem;
   }
   .am-nav {
     top: 30px;
     right: 40px;
   }
   main .section-container .name {
-    left: 30%;
-    top: 4rem;
+    left: 0;
+    top: 5rem;
+    width: 90%;
+    font-size: 3rem;
   }
+  main .section-container .name #mitchell {
+    top: -1rem;
+    left: -1.5rem;
+    position: relative;
+  }
+  #abigail {
+    right: 1.57rem;
+    float: right;
+    position: relative;
+    width: fit-content;
+  }
+
+  #l-letter {
+    height: 119px;
+    position: relative;
+    top: -11.58rem;
+    left: -0.2rem;
+  }
+  #web-dev {
+    right: 0;
+    bottom: 3.7rem;
+    text-align: end;
+    margin-top: 2rem;
+  }
+  #create-span {
+    width: fit-content;
+    right: 0;
+  }
+
+  #hello-text, 
+  #line-left,
+  #line-about-me, 
+  #line-work, 
+  #line-vertical,
+  #line-contact {
+    display: none;
+  }
+  #header-container {
+    top: 0;
+  }
+  #header-about {
+    left: 0;
+  }
+  .intro-span, 
+  #about-text {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  #span-art, #span-design, #span-outdoors {
+    width: 5rem;
+    font-size: 3.5rem;
+  }
+  #work-container {
+    margin-top: 12rem;
+  }
+  .work {
+    margin-top: 4rem;
+  }
+  #header-work {
+    top: 0;
+  }
+  #selected-header {
+    font-size: 1.7rem;
+    letter-spacing: 6px;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  #passionate-span {
+    margin: 0;
+    width: 100%;
+  }
+  #extra-info-span {
+    width: 100%;
+    font-size: 2rem;
+  }
+  .main-selected-container {
+    flex-direction: column;
+    width: fit-content;
+  }
+  .project-container {
+    font-size: 2rem;
+    width: 325px;
+  }
+
+  #seeker-header, #flashcards-header {
+    text-align: center;
+    width: 325px;
+  }
+  .contact-container {
+    width: 90%;
+  }
+  #contact-container {
+    left: 0;
+  }
+  #header-contact {
+    left: 0;
+    text-align: center;
+  }
+
+  .email-container p {
+    font-size: 1rem;
+  }
+  #follow ul {
+    padding: 0;
+  }
+
 }
