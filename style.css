@@ -183,7 +183,7 @@ main {
   animation: dash 3s linear forwards ;
   animation-timing-function: ease-in;
   position: relative;
-  bottom: 16.5rem;
+  bottom: 24.5rem;
   left: -24.5rem;
 }
 #line-about-me {
@@ -224,7 +224,7 @@ main {
   animation: dash 2s linear forwards ;
   animation-timing-function: ease-in;
   position: relative;
-  bottom: 25.7rem;
+  bottom: 33.6rem;
   left: 8rem;
   stroke-width: 3;
 }
@@ -255,37 +255,20 @@ main .section-container .name #mitchell{
 #l-letter {
   height: 196px;
   position: relative;
-  top: -23.7rem;
-  left: 27rem;
-}
-#multi-shapes {
-  width: 27rem;
-  position: relative;
-  top: -37.8rem;
-  right: 6.35rem;
-  z-index: 2;
-}
-#green-shape {
-  position: relative;
-  width: 3rem;
-  top: -48rem;
-  left: 7rem;
-  z-index: 2;
+  top: -16rem;
+  left: 11.5rem;
 }
 
 main .dev-container {
   height: 0px;
-  /* color: #000; */
   font-family: 'Karla';
   font-size: 1rem;
   font-weight: 800;
   letter-spacing: 3px;
   padding: 1rem;
-  text-align: right;
   width: fit-content;
 }
 main .about {
-  display: block;
   font-family: 'Karla', sans-serif;
   letter-spacing: 3px;
   margin: 0 auto;
@@ -321,20 +304,10 @@ main .about {
   opacity: 1;
 }
 #hello-text {
-  /* position: relative;
-  font-size: 4rem;
-  top: 18.1rem;
-  left: 5rem;
-  letter-spacing: 4px;
-  font-weight: 400;
-  color: #dbdbdb;
-  opacity: 1; */
-  /* animation: text 3s 1 forwards;
-  -webkit-animation: text 3s 1 forwards; */
   position: relative;
   font-size: 4rem;
-  top: 17.1rem;
-  left: 4rem;
+  top: -4.9rem;
+  left: 11rem;
   letter-spacing: 4px;
   font-weight: 400;
   color: #ee6d56;
@@ -346,22 +319,6 @@ main .about {
   border-style: solid;
 }
 
-
-#hello-container {
-  height: 10px;
-}
-#main-hello {
-  position: relative;
-  font-size: 3rem;
-  writing-mode: vertical-rl;
-  text-orientation: sideways;
-  transform: rotate(180deg);
-  left: 25%;
-  bottom: 37rem;
-  font-family: 'Karla', sans-serif;
-  letter-spacing: 43px;
-  display: none
-}
 #main-hello:hover {
   cursor: none;
 }
@@ -401,7 +358,7 @@ main .about {
 #web-dev {
   right: -27%;
   position: relative;
-  bottom: 7.7rem;
+  bottom: 15.7rem;
   text-align: center;
   padding: 5px;
 }
@@ -413,7 +370,7 @@ main .about {
   letter-spacing: 5px;
   padding: 1rem;
   right: -12%;
-  bottom: 6rem;
+  bottom: 14rem;
   cursor: none;
   position: relative;
 } 
@@ -488,7 +445,7 @@ main .about {
   font-family: 'Karla', sans-serif;
 }
 .work {
-  display: block;
+
   height: 40rem;
 }
 .main-selected-container {
@@ -650,7 +607,7 @@ h4 {
 
 @media only screen and (max-width: 600px) {
   * {
-    max-width: 375px;
+    max-width: 600px;
   }
   main .about {
     min-width: 230px;
@@ -779,11 +736,103 @@ h4 {
     text-align: center;
   }
 
-  .email-container p {
+  .email-container a {
     font-size: 1rem;
   }
   #follow ul {
     padding: 0;
   }
 
+}
+
+@media only screen and (max-width: 500px) {
+  * {
+    max-width: 500px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  * {
+    max-width: 414px;
+  }
+  #am-button {
+    margin: 0;
+  }
+  #abigail {
+    right: 2.57rem;
+  }
+  main .section-container .name #mitchell {
+    left: -2.5rem;
+  }
+  #l-letter {
+    height: 119px;
+    position: relative;
+    top: -9.58rem;
+    left: -1.5rem;
+  }
+  #web-dev {
+    bottom: 10.7rem;
+  }
+  #create-span {
+    bottom: 5rem;
+  }
+  #contact-container {
+    width: 100%;
+  }
+  .email-container a {
+    letter-spacing: 5px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  * {
+    max-width: 375px;
+  }
+  #main-panel, #about-panel {
+    height: 235vh;
+  }
+  main .section-container .name {
+    font-size: 3rem;
+  }
+  #abigail {
+    right: 2rem;
+  }
+  main .section-container .name #mitchell {
+    left: -1.9rem;
+  }
+  #l-letter {
+    height: 119px;
+    position: relative;
+    top: -9.58rem;
+    left: -0.8rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  * {
+    max-width: 320px;
+  }
+  main .section-container .name {
+    font-size: 2rem;
+  }
+  .navigation-menu {
+    width: 150px;
+  }
+  .project-container {
+    font-size: 2rem;
+    width: 300px;
+  }
+
+  #seeker-header, #flashcards-header {
+    text-align: center;
+    width: 300px;
+  }
+  #work-panel {
+    height: 280vh;
+  }
+
+  .email-container a {
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
 }
