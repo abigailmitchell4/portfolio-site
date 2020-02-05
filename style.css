@@ -717,6 +717,7 @@ h4 {
     width: fit-content;
   }
   .project-container {
+    color: inherit;
     font-size: 2rem;
     width: 325px;
   }
@@ -737,7 +738,11 @@ h4 {
   }
 
   .email-container a {
+    color: inherit;
     font-size: 1rem;
+  }
+  #form-link:visited {
+    color: inherit;
   }
   #follow ul {
     padding: 0;
@@ -762,7 +767,8 @@ h4 {
     right: 2.57rem;
   }
   main .section-container .name #mitchell {
-    left: -2.5rem;
+    left: -0.6rem;
+    width: fit-content;
   }
   #l-letter {
     height: 119px;
@@ -795,16 +801,16 @@ h4 {
     font-size: 3rem;
   }
   #abigail {
-    right: 2rem;
+    right: 1.7rem;
   }
   main .section-container .name #mitchell {
-    left: -1.9rem;
+    left: -0.8rem;
   }
   #l-letter {
     height: 119px;
     position: relative;
     top: -9.58rem;
-    left: -0.8rem;
+    left: -0.6rem;
   }
 }
 
@@ -820,12 +826,11 @@ h4 {
   }
   .project-container {
     font-size: 2rem;
-    width: 300px;
+    width: 100%;
   }
 
   #seeker-header, #flashcards-header {
     text-align: center;
-    width: 300px;
   }
   #work-panel {
     height: 280vh;
