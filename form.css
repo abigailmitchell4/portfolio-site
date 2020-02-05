@@ -2,12 +2,21 @@
   margin: 0 auto;
   box-sizing: border-box;
 }
+html {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #c6dcf4;
+  color: #fe8324;
+  letter-spacing: 4px;
+}
 
 form {
   display: flex;
   flex-direction: column;
   flex: 1 1 auto;
   margin: 4rem 0;
+  font-family: 'Karla', sans-serif;
 }
 .form-container {
   min-width: 600px;
@@ -20,5 +29,54 @@ label {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 2rem;
+  margin: 1rem;
+}
+p {
+  margin: 1rem 0;
+  padding: 10px;
+  border-style: solid;
+  border-width: 2px;
+}
+
+input, textarea {
+  background-color: transparent;
+  border-color: inherit;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-top-style: none;
+  border-right-style: none;
+  border-left-style: none;
+  width: 100%;
+  padding: 10px;
+  font-size: 1.7rem;
+  color: inherit;
+  font-family: inherit;
+  text-decoration: none;
+}
+
+input {
+  height: 70px;
+}
+
+textarea {
+  height: 100px;
+}
+
+button {
+  border-style: solid;
+  border-color: inherit;
+  border-width: 2px;
+  color: inherit;
+  padding: 10px 15px;
+  margin-top: 1rem;
+  background-color: transparent;
+  letter-spacing: 4px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .form-container {
+    min-width: 300px;
+    max-width: 300px;
+  }
 }
