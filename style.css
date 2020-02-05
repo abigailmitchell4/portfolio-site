@@ -581,6 +581,7 @@ main .about {
 }
 
 /* CONTACT  */
+
 #contact-panel {
   height: 70vh;
   font-family: 'Karla', sans-serif;
@@ -601,8 +602,12 @@ main .about {
   left: 30%;
 }
 
-.email-container p{
+.email-container a {
   font-size: 1.5rem;
+  color: inherit;
+  cursor: none;
+  width: fit-content;
+  float: left;
 }
 
 .follow-container {

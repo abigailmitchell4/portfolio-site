@@ -1,0 +1,11 @@
+* {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  margin: 4rem 0;
+}
