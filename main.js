@@ -1,5 +1,19 @@
 $(document).ready(() => {
-
+  
+    const $menuButton = $('#menu-button');
+    const $navDropdown = $('.nav-menu-mobile');
+  
+    $navDropdown.hide();
+  
+    $menuButton.on('click', () => {
+      $navDropdown.toggle();
+      $menuButton.hide();
+    });
+  
+    $navDropdown.on('mouseleave', () => {
+      $navDropdown.hide();
+      $menuButton.toggle();
+    });
 //lines
 
 // let scroll = $window.scrollTop() + ($window.height()/2 );

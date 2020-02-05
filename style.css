@@ -77,6 +77,10 @@ body {
 
 /* NAV MENU */
 
+.menu {
+  display: none;
+}
+
 .am-nav {
   width: fit-content;
   position: fixed;
@@ -95,7 +99,7 @@ body {
   margin-left: 5px;
   cursor: none;
 }
-.navigation-menu {
+.nav-menu {
   position: fixed;
   top: 290px;
   left: -12rem;
@@ -108,18 +112,18 @@ li {
   font-family: 'Karla', sans-serif;
   letter-spacing: 6px;
 }
-.navigation-menu ul {
+.nav-menu ul {
   transform: rotate(-90deg);
   padding: 10px;
   border-style: solid;
   border-width: 2px;
 }
-.navigation-menu ul li {
+.nav-menu ul li {
   font-size: 1.1rem;
   color: inherit;
   display: inline-block;
 }
-.navigation-menu ul li a {
+.nav-menu ul li a {
   margin: 0 2.5rem;
 }
 a:visited {
@@ -471,6 +475,7 @@ main .about {
   padding: 1rem 0;
 }
 .project-container {
+  color: inherit;
   font-size: 5.4rem;
   margin: 4rem 0;
 }
@@ -614,16 +619,47 @@ h4 {
     min-width: 230px;
     width: 285px;
   }
-  .navigation-menu {
+  .menu {
+    display: flex;
+    font-family: 'karla', sans-serif;
+    font-size: 1.3rem;
+    position: fixed;
+    top: 30px;
+    left: 40px;
+    padding: 5px;
+    border-style: solid;
+    border-width: 2px;
+    letter-spacing: 6px;
+  }
+  .menu .nav-menu-mobile {
+    float: left;
+    display: flex;
+    flex-direction: column;
+  }
+  .menu .nav-menu-mobile ul {
+    padding: 0;
+  }
+  .nav-menu {
+    display: none;
+  }
+  /* .nav-menu-mobile {
     top: 30px;
     left: 40px;
     width: 200px;
-  }
-  .navigation-menu ul {
+    display: flex;
+    flex-direction: column;
+  } */
+  .nav-menu ul {
     transform: none;
   }
   #am-button, #about-button, #work-button, #contact-button {
     margin: 0 1rem;
+  }
+  #am-button {
+    margin-left: 0.2rem;
+  }
+  .panel {
+    width: fit-content;
   }
   li {
     font-size: 1rem;
@@ -728,7 +764,7 @@ h4 {
     width: 325px;
   }
   .contact-container {
-    width: 90%;
+    width: 100%;
   }
   #contact-container {
     left: 0;
@@ -787,7 +823,7 @@ h4 {
     width: 100%;
   }
   .email-container a {
-    letter-spacing: 5px;
+    letter-spacing: 3px;
   }
 }
 
@@ -822,13 +858,13 @@ h4 {
   main .section-container .name {
     font-size: 2rem;
   }
-  .navigation-menu {
+  /* .nav-menu {
     width: 150px;
-  }
-  .project-container {
+  } */
+  /* .project-container {
     font-size: 2rem;
     width: 100%;
-  }
+  } */
 
   #seeker-header, #flashcards-header {
     text-align: center;
