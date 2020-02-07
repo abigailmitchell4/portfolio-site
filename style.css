@@ -482,6 +482,7 @@ main .about {
   color: inherit;
   font-size: 5.4rem;
   margin: 4rem 0;
+  line-height: 1.5;
 }
 #selected-container {
   position: relative;
@@ -510,7 +511,7 @@ main .about {
 /* #flashcards a {
   cursor: none;
 } */
-#flashcards-header {
+#seeker-header, #flashcards-header, #tip-header {
   width: 51rem;
   display: flex;
   border-bottom-style: solid;
@@ -518,25 +519,22 @@ main .about {
   letter-spacing: 6px;
   font-family: 'Karla', sans-serif;
 }
-#flashcards a:visited {
+#flashcards a:visited,
+#seeker a:visited,
+#tip a:visited 
+ {
   color: inherit;
 }
-#seeker a, #flashcards a {
+#seeker a, 
+#flashcards a,
+#tip a {
   cursor: none;
 }
-#seeker a:visited {
-  color: inherit;
-}
-#seeker-header {
-  width: 51rem;
-  display: flex;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  text-align: justify;
-  letter-spacing: 6px;
-  font-family: 'Karla', sans-serif;
-}
-#seeker:hover, #flashcards:hover {
+
+#seeker:hover, 
+#flashcards:hover,
+#tip:hover
+ {
   color: #fff;
 }
 .number {
@@ -646,13 +644,7 @@ h4 {
   .nav-menu {
     display: none;
   }
-  /* .nav-menu-mobile {
-    top: 30px;
-    left: 40px;
-    width: 200px;
-    display: flex;
-    flex-direction: column;
-  } */
+
   .nav-menu ul {
     transform: none;
   }
@@ -761,6 +753,7 @@ h4 {
     color: inherit;
     font-size: 2rem;
     width: 325px;
+
   }
 
   #seeker-header, #flashcards-header {
