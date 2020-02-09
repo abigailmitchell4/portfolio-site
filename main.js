@@ -95,7 +95,6 @@ root.addEventListener('mousemove', (e) => {
   setPosition(cursor, e)
   // div.style.backgroundColor == '#000' ? cursor.css('border-color') == '#fff' : cursor.css('border-color') == '#000'
 })
-
 function setPosition(element, e) {
   element.style.transform = "translate3d(" + (e.clientX) + "px, " + (e.clientY) + "px, 0px)"
 }

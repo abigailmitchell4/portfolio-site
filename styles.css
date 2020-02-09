@@ -37,7 +37,11 @@ svg {
   color: #ebbcb7;
   stroke: #ebbcb7;
 }
-
+.color-brown {
+  background-color: #bea1a4;
+  color: #2b22d0;
+  stroke: #2b22d0;
+}
 
 .section-container {
   width: 100%;
