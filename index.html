@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-  <link rel='stylesheet' href='style.css'/>
+  <link rel='stylesheet' href='styles.css'/>
   <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Snippet&display=swap" rel="stylesheet">
@@ -24,42 +24,48 @@
     </div>
   </div>
   <div class='nav-menu'>
-      <ul>
-        <li><a href='#header-about' id='about-button'class='strike-through'>about</a></li>
-        <li><a href='#header-work' id='work-button' class='strike-through'>work</a></li>
-        <li><a href='#header-contact' id='contact-button'class='strike-through'>contact</a></li>
-      </ul>
-    </div>
+    <ul>
+      <li><a href='#header-about' id='about-button'class='strike-through'>about</a></li>
+      <li><a href='#header-work' id='work-button' class='strike-through'>work</a></li>
+      <li><a href='#header-contact' id='contact-button'class='strike-through'>contact</a></li>
+    </ul>
+  </div>
 
   <main>
     <div class='panel' id='main-panel' data-color='gray'>
       <div class='section-container'>
         <section class='name'>
+          <div class='name-container'>
           <div class='name-main'>
             <h1 id='abigail'>abigai</h1>
             <h1 id='mitchell'>mitchel</h1>
-            <img id='l-letter' src='./images/red-l-squiggle.png'/>
           </div>
-            <svg id="line-left" height="10" width="110">
-              <path d='m100 10, l-90 0'
-               />
-            </svg>
+            <div class='l-container'>
+              <img id='l-letter' src='./images/red-l-squiggle.png'/>
+            </div>
+          </div>
+            <!-- <svg id="line-left" height="10" width="110">
+              <path d='m100 10, l-90 0'/>
+            </svg> -->
           <section class='dev-container'>
+            <!-- <svg id="line-vertical" height="414" width="10">
+              <path d='m10 10, l0 414'/>
+            </svg> -->
             <h2 id='web-dev'>full stack web developer</h2>
-              <svg id="line-vertical" height="414" width="10">
-                <path d='m10 10, l0 414'/>
-            </svg>
+            
+          </section>
+          <div class='hc-container'>
             <span id='hello-section'>
                 <h2 id='hello-text'>hello</h2>
                 <!-- <svg id='hello-svg' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" ><defs><path d="M62.71 203.85h305.71v200H62.71v-200z" id="a"/></defs><use xlink:href="#a"/></svg> -->
             </span>
-          </section>
-          <span id='create-span'>
-              let's create something
-            <a href='#header-contact' class='strike-through' id='create-something-link'>
-                together
-            </a>
-          </span>
+            <span id='create-span'>
+                let's create something
+              <a href='#header-contact' class='strike-through' id='create-something-link'>
+                  together
+              </a>
+            </span>
+          </div>
         </section>
       </div>
     </div>
@@ -67,9 +73,10 @@
     <div class='panel' id='about-panel' data-color='pink'>
     <div class='section-container' id='about-container'>
         <section class='about'>
-      <h1 class='section-header' id='header-about'>about me
-        <svg id='line-about-me' height="10" width="420">
-          <path d='m420 10, l-420 0'/>
+      <h1 class='section-header' id='header-about'>
+        <span>about me</span>
+        <svg id='line-about-me' height="3" width="420">
+          <path d='m420 3, l-420 0'/>
         </svg>
       </h1>
       
@@ -99,8 +106,8 @@
     <div class='panel' id='work-panel' data-color='green'>
       <div class='section-container' id='work-container'>
         <h1 class='section-header' id='header-work'>work
-          <svg id='line-work' height='10' width='525'>
-            <path d='m525 10, l-525 0'>
+          <svg id='line-work' height='3' width='525'>
+            <path d='m525 3, l-525 0'>
           </svg>
         </h1>
         <section class='work'>
@@ -124,16 +131,42 @@
           </div>
           <div id='projects'>
             <div id='seeker' class='project-container'>
-              <h3 id='seeker-header'><a href='https://seeker-dpl.herokuapp.com/'>DevPoint Seekr</h3></a>
+              <h3 class='project-h' id='seeker-header'><a href='https://seeker-dpl.herokuapp.com/'>DevPoint Seekr</a></h3>
               <p class='number'>01</p>
             </div>
             <div id='flashcards' class='project-container'>
-              <h3 id='flashcards-header'><a  href='https://vigilant-gates-68901c.netlify.com/'>Flashcards</h3></a>
+              <h3 class='project-h' id='flashcards-header'><a  href='https://vigilant-gates-68901c.netlify.com/'>Flashcards</a></h3>
               <p class='number'>02</p>
             </div>
             <div id='tip' class='project-container'>
-                <h3 id='tip-header'><a  href='https://amazing-knuth-d2ddd3.netlify.com/'>Tip Calculator</h3></a>
-                <p class='number'>03</p>
+              <h3 class='project-h' id='tip-header'><a href='https://amazing-knuth-d2ddd3.netlify.com/'>Tip Calculator</a></h3>
+              <p class='number'>03</p>
+            </div>
+          </div>
+          <div id='currently-wo'>
+            <div class='cwo-container'>
+            <h3 id='cwo-header'>currently working on</h3>
+              <svg id='down-arrow' viewBox="0 0 100 100">
+                <path
+                  d="
+                     M 50,16
+                     l 0,72
+                     M 20,60
+                     l 30,28
+                     M 80,60
+                     l -30,28"
+                  stroke-linecap="round"
+                  stroke-width="3"
+                />
+              </svg>
+            </div>
+            <div id='ccc' class='project-container'>
+              <h3 class='project-h' id='ccc-header'><span>City Creek Counseling</span></h3>
+              <p class='number'>01</p>
+            </div>
+              <div id='hcfa' class='project-container'>
+                <h3 class='project-h' id='hcfa-header'><span>A.M. Fine Art</span></h3>
+                <p class='number'>02</p>
               </div>
           </div>
         </section>
@@ -143,8 +176,8 @@
     <div class='panel' id='contact-panel' data-color='gray'>
       <div class='section-container' id='contact-container'>
         <h1 class='section-header' id='header-contact'>contact
-          <svg id='line-contact' height="10" width="420">
-              <path d='m420 10, l-420 0'/>
+          <svg id='line-contact' height="3" width="420">
+              <path d='m420 3, l-420 0'/>
           </svg>
         </h1>
         <section class='contact'>
@@ -172,4 +205,3 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src='main.js'></script>
   </body>
- 

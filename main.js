@@ -44,10 +44,24 @@ $(document).ready(() => {
     let $window = $(window),
         $body = $('body'),
         $panel = $('.panel');
+        $cwo = $('#cwo-header');
+        $work = $('#work-panel');
+        $arrow = $('#down-arrow');
     
     // Change 33% earlier than scroll position so colour is there when you arrive.
     let scroll = $window.scrollTop() + ($window.height()/2 );
-   
+    let scroll2 = $window.scrollTop() + ($window.height()/1.5 );
+
+    $work.each(function() {
+      let $this = $(this);
+
+      if ($this.position().top <= scroll2 && $this.position().top + $this.height() > scroll2) {
+        $arrow.hide();
+      } else {
+        $arrow.show();
+      }
+    })
+
     $panel.each(function() {
       let $this = $(this);
       
@@ -66,12 +80,12 @@ $(document).ready(() => {
         $body.addClass('stroke' + $(this).data('color'));
       }
     });    
-    
   }).scroll();
+
 
 //CUSTOM CURSOR
 const root = document.querySelector('html')
-const div = document.querySelector('div')
+
 // Real cursor element
 const cursor = document.createElement('div')
 cursor.classList.add('cursor')

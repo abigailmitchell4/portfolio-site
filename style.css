@@ -2,6 +2,7 @@
 * {
   margin: 0 auto;
   text-decoration: none;
+  font-family: 'Karla', sans-serif;
 }
 html {
   background-color: #dbdbdb;
@@ -21,6 +22,8 @@ body {
 
 .panel {
   display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 #main-panel, #about-panel {
   height: 170vh;
@@ -290,12 +293,10 @@ main .about {
   font-family: 'Archivo', sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
-  
 }
+
 #header-about {
-  top: -100px;
   position: relative;
-  /* float: right; */
   letter-spacing: 22px;
   font-size: 1.5rem;
   left: -14rem;
@@ -445,15 +446,14 @@ main .about {
 /* WORK section */
 
 #work-panel {
-  margin-top: 35rem;
-  height: 230vh;
+  margin: 35rem 0;
+  min-height: 270vh;
 }
 #work-container {
   position: relative;
   font-family: 'Karla', sans-serif;
 }
 .work {
-
   height: 40rem;
 }
 .main-selected-container {
@@ -511,30 +511,54 @@ main .about {
 /* #flashcards a {
   cursor: none;
 } */
-#seeker-header, #flashcards-header, #tip-header {
+#currently-wo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+#seeker-header, 
+#flashcards-header, 
+#tip-header, 
+#ccc-header,
+#hcfa-header {
   width: 51rem;
   display: flex;
+  flex-shrink: 1;
   border-bottom-style: solid;
   border-bottom-width: 2px;
   letter-spacing: 6px;
   font-family: 'Karla', sans-serif;
 }
+#cwo-header {
+  font-size: 2.5rem;
+  margin: 4rem 0;
+  letter-spacing: 3px;
+}
+#ccc-header {
+  font-size: 4.14rem;
+  margin-top: 4rem;
+  line-height: 2;
+}
 #flashcards a:visited,
 #seeker a:visited,
 #tip a:visited 
- {
+{
   color: inherit;
 }
 #seeker a, 
 #flashcards a,
-#tip a {
+#tip a 
+{
   cursor: none;
 }
 
 #seeker:hover, 
 #flashcards:hover,
 #tip:hover
- {
+{
   color: #fff;
 }
 .number {
@@ -605,6 +629,7 @@ h4 {
 
   #header-about {
     left: -3.4rem;
+    width: 290px;
   }
 
   #line-about-me {
@@ -613,10 +638,11 @@ h4 {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   * {
-    max-width: 600px;
+    max-width: 700px;
   }
+
   main .about {
     min-width: 230px;
     width: 285px;
@@ -655,7 +681,7 @@ h4 {
     margin-left: 0.2rem;
   }
   .panel {
-    width: fit-content;
+    width: 600px;
   }
   li {
     font-size: 1rem;
@@ -756,7 +782,7 @@ h4 {
 
   }
 
-  #seeker-header, #flashcards-header {
+  #seeker-header, #flashcards-header, #tip-header {
     text-align: center;
     width: 325px;
   }
