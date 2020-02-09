@@ -46,6 +46,11 @@ body {
   color: #fff;
   stroke: #fff;
 }
+.color-teal {
+  background-color: #c6d6c9;
+  color: #ee6d56;
+  stroke: #ee6d56;
+}
 
 .color-blue {
   background-color: #4b4bd3;

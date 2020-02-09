@@ -1,14 +1,25 @@
 * {
   margin: 0 auto;
   box-sizing: border-box;
+  font-family: 'Karla', sans-serif;
 }
 html {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: #c6dcf4;
-  color: #fe8324;
+  background-color: #c6d6c9;
+  color: #ee6d56;
   letter-spacing: 4px;
+}
+.no-focus-outline input:focus,
+.no-focus-outline textarea:focus,
+.no-focus-outline button:focus {
+  outline: none;
+}
+h1 {
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 3rem;
 }
 
 form {
@@ -16,7 +27,6 @@ form {
   flex-direction: column;
   flex: 1 1 auto;
   margin: 4rem 0;
-  font-family: 'Karla', sans-serif;
 }
 .form-container {
   min-width: 600px;
@@ -59,7 +69,7 @@ input {
 }
 
 textarea {
-  height: 100px;
+  height: 200px;
 }
 
 button {
