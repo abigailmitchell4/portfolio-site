@@ -300,6 +300,7 @@ a:visited {
 }
 #header-about span {
   flex-shrink: 0;
+  margin: 0;
 }
 #header-about svg {
   flex-shrink: 1;
@@ -423,15 +424,16 @@ a:visited {
 
 #flashcards a:visited,
 #seeker a:visited,
-#tip a:visited 
+#tip-header a:visited 
 {
   color: inherit;
 }
 #seeker a, 
 #flashcards a,
-#tip a 
+#tip-header a 
 {
   cursor: none;
+  color: inherit;
 }
 
 #seeker:hover, 
@@ -631,8 +633,8 @@ h4 {
   #l-letter {
     max-height: 114px;
     height: 119px;
-    width: 12px;
-    max-width: 12px;
+    width: 10px;
+    max-width: 10px;
   }
   .hc-container {
     flex-wrap: wrap;
@@ -683,14 +685,19 @@ h4 {
   }
   #selected-p {
     font-size: 1.5rem;
+    width: 85%;
   }
   .skills-container li {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .project-container,
   #ccc-header,
   #cwo-header  {
     font-size: 1.5rem;
+  }
+
+  #ccc-header {
+    margin: 0
   }
   #header-work, 
   #selected-header, 
@@ -707,6 +714,9 @@ h4 {
   }
   .project-h {
     max-width: 350px;
+  }
+  .contact-container {
+    width: 90%;
   }
   .contact {
     width: 100%;
@@ -742,13 +752,11 @@ h4 {
     opacity: 0;
     border-radius: 100px;
     width: 2%;
-    transform: translateY(-200%);
   }
   100% {
     opacity: 1;
     border-radius: 100%;
     width: 10%;
-    transform: translateY(40%);
   }
 }
 
