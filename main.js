@@ -50,7 +50,7 @@ $(document).ready(() => {
     
     // Change 33% earlier than scroll position so colour is there when you arrive.
     let scroll = $window.scrollTop() + ($window.height()/2 );
-    let scroll2 = $window.scrollTop() + ($window.height()/1.5 );
+    let scroll2 = $window.scrollTop() + ($window.height()/0.9);
 
     $work.each(function() {
       let $this = $(this);

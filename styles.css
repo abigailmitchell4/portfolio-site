@@ -83,6 +83,9 @@ svg {
   font-family: 'Karla', sans-serif;
   z-index: 99;
 }
+/* #home-logo {
+  width: 40px;
+} */
 #am-button {
   color: inherit;
   margin-left: 5px;
@@ -424,7 +427,8 @@ a:visited {
 
 #flashcards a:visited,
 #seeker a:visited,
-#tip-header a:visited 
+#tip-header a:visited,
+#hcfa a:hover
 {
   color: inherit;
 }
@@ -438,7 +442,8 @@ a:visited {
 
 #seeker:hover, 
 #flashcards:hover,
-#tip:hover
+#tip:hover,
+#hcfa:hover
 {
   color: #fff;
 }
@@ -581,6 +586,9 @@ h4 {
 /* ////////////// */
 /* PHONES */
 @media only screen and (max-width: 600px) {
+  .cursor {
+    display: none;
+  }
   .section-container {
     align-items: center;
     align-content: center;
