@@ -428,13 +428,14 @@ a:visited {
 #flashcards a:visited,
 #seeker a:visited,
 #tip-header a:visited,
-#hcfa a:hover
+#hcfa-header a:visited
 {
   color: inherit;
 }
 #seeker a, 
 #flashcards a,
-#tip-header a 
+#tip-header a,
+#hcfa-header a
 {
   cursor: none;
   color: inherit;
