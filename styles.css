@@ -749,6 +749,18 @@ h4 {
     align-content: center;
     max-width: 300px;
   }
+  .name-main {
+    margin: 0;
+  }
+  .name {
+    letter-spacing: 4px;
+  }
+  .l-container {
+    margin: 0;
+  }
+  #l-letter {
+    margin-left: 18%;
+  }
   .project-h {
     max-width: 300px;
   }
@@ -756,6 +768,12 @@ h4 {
   #follow ul li {
     letter-spacing: 3px;
   }
+}
+
+.name-container {
+  justify-content: flex-end;
+  align-content: flex-end;
+  margin: 0;
 }
 /* ANIMATIONS */
 
