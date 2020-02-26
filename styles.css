@@ -427,7 +427,7 @@ a:visited {
 
 #flashcards a:visited,
 #seeker a:visited,
-#tip-header a:visited,
+#weather-header a:visited,
 #hcfa-header a:visited,
 #ccc-header a:visited
 {
@@ -435,7 +435,7 @@ a:visited {
 }
 #seeker a, 
 #flashcards a,
-#tip-header a,
+#weather-header a,
 #hcfa-header a,
 #ccc-header
 {
@@ -445,7 +445,7 @@ a:visited {
 
 #seeker:hover, 
 #flashcards:hover,
-#tip:hover,
+#weather:hover,
 #hcfa:hover,
 #ccc:hover
 {
