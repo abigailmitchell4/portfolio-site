@@ -10,7 +10,7 @@ $(document).ready(() => {
       $menuButton.hide();
     });
   
-    $navDropdown.on('mouseleave', () => {
+    $navDropdown.on('click', () => {
       $navDropdown.hide();
       $menuButton.toggle();
     });

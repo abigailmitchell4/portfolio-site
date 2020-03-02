@@ -601,14 +601,14 @@ h4 {
   .menu {
     display: flex;
     font-family: 'karla', sans-serif;
-    font-size: 1.3rem;
+    font-size: 1rem;
     position: fixed;
-    top: 30px;
-    left: 40px;
     padding: 5px;
     border-style: solid;
     border-width: 2px;
     letter-spacing: 6px;
+    align-self: center;
+    margin-top: 1rem;
   }
   .menu .nav-menu-mobile {
     float: left;
@@ -618,6 +618,9 @@ h4 {
   .menu .nav-menu-mobile ul {
     padding: 0;
   }
+  .menu .nav-menu-mobile ul li {
+    font-size: 1rem;
+  }
   .nav-menu {
     display: none;
   }
@@ -626,8 +629,7 @@ h4 {
     transform: none;
   }
   .am-nav {
-    top: 30px;
-    right: 40px;
+    display: none;
   }
   .name {
     font-size: 2.5rem;
@@ -638,6 +640,10 @@ h4 {
     max-width: 300px;
     min-width: 300px;
 
+  }
+
+  .strike-through:before, .strike-through:hover:after {
+    display: none;
   }
   #main-panel {
     margin-top: 4rem;
@@ -734,20 +740,28 @@ h4 {
     width: 100%;
   }
   #header-contact {
-    width: 100%;
+    width: 350px;
   }
   #form-link,
   #follow ul li {
     font-size: 1rem;
+    letter-spacing: 4px;
   }
 
 }
 
 @media only screen and (max-width: 350px) {
-  .section-container {
+  .about,
+  #about-text,
+  #passionate-span,
+  #header-work,
+  #header-contact,
+  .section-container
+  {
     align-items: center;
     align-content: center;
-    max-width: 300px;
+    max-width: 350px;
+    width: 350px;
   }
   .name-main {
     margin: 0;
@@ -761,6 +775,12 @@ h4 {
   #l-letter {
     margin-left: 18%;
   }
+  #span-art, 
+  #span-design, 
+  #span-outdoors 
+  {
+    font-size: 3.5rem;
+  }
   .project-h {
     max-width: 300px;
   }
@@ -769,7 +789,6 @@ h4 {
     letter-spacing: 3px;
   }
 }
-
 .name-container {
   justify-content: flex-end;
   align-content: flex-end;
